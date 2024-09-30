@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Food Search App</h1>
+    </nav>
+
+    <div class="container">
+        <input type="text" id="foodInput" placeholder="Enter food name">
+        <div class="cart">
+            <span>Cart: <span id="cartCount">0</span> items</span>
+        </div>
+
+        <h2 id="selectedFoodTitle">Selected Food Details</h2>
+        <div id="selectedFood"></div>
+
+        <h2>Search Results</h2>
+        <div id="exactResult"></div>
+        
+        <h2>Related Foods (by First Letter)</h2>
+        <div id="relatedFoods"></div>
+
+        <h2>Popular Meals</h2>
+        <div id="popularMeals"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalInfo"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Food Search App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
