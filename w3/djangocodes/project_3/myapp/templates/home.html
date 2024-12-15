@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+    <h1>this is home </h1>
+    <h1>author:{{author}} </h1>
+    <h1>age:{{age}} </h1>
+
+   
+{% if age >= 20 %}
+<h4>license allowed</h4>
+{% elif age >= 10 and age <= 19 %}
+    <h4>license not allowed</h4>
+{% else %}
+    <h4>child</h4>
+{% endif %}
+
+
+{% for i in courses%} 
+   <h4>{{i.id}}</h4>
+{% endfor %}  
+
+{{lst}}
+<h1>{{ lst | join:" - "}}</h1>
+<h1>{{ birthday | date:"D d M Y" }}</h1>
+
+
+</body>
+
+
+</head>
+
+</html>
