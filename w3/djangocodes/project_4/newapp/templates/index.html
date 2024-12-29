@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+      <h1>{{id}} </h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">userid</th>
+            <th scope="col">id</th>
+            <th scope="col">title</th>
+            <th scope="col">body</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+          <tr>
+            <th scope="row"> {{i.userId}}</th>
+            <td>{{i.id}}</td>
+            <td>{{i.title}}</td>
+            <td>{{i.body}}</td>
+          </tr>
+         {% endfor%}
+        </tbody>
+      </table>
+    <h1>index</h1>
+    <img src="{%static 'img/food1.jpeg'%}" alt=""/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    {% endblock %}
